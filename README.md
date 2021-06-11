@@ -1,5 +1,6 @@
 # This repository contains my data science projects 
 
+- **decomposing-time-series** : this file shows how to decompose a time series dataset using statsmodels.api
 - **detrending-time-series** : this file shows how to detrend a time series dataset by model fitting (in this case I have used some dummy data of EMEA sales volumes) using scikit-learn Linear Regression model. 
 - **forecasting-sales-volumes-sarimax** : this file contains a predictive SARIMAX model that forecasts sales volume of EMEA, AMERICA and ASIA for 6 month time horizon. 
   The SARIMAX model is totaly based on historical patterns of actual sales quantity ('monthly-sales-data-final.csv').

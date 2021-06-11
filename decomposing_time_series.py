@@ -1,20 +1,11 @@
 import pandas as pd
-import numpy as np
-import os
-import sklearn
 import warnings
-from sklearn.metrics import accuracy_score
-import plotly
-import plotly.express as px
-import plotly.graph_objects as go
-import plotly.figure_factory as ff
-from plotly.subplots import make_subplots
 import matplotlib.pyplot as plt
 
 warnings.filterwarnings("ignore")
 
 #####READS THE MONTHLY SALES DATA CSV FILE
-sales = pd.read_csv('./data_csv/monthly-sales-data.csv')
+sales = pd.read_csv('./data_csv/monthly-sales-data-final.csv')
 
 #####SET MONTH AS INDEX FOR DECOMPOSITION AND FILTER FOR ONLY NORTH AMERICA SALES DATA
 america_sales_actuals = sales.loc[sales['region'] == 'AMERICA'].set_index('month')

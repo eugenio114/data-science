@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 warnings.filterwarnings("ignore")
 
 #####READS THE MONTHLY SALES DATA CSV FILE
-sales = pd.read_csv('monthly-sales-data.csv')
+sales = pd.read_csv('./data_csv/monthly-sales-data.csv')
 
 #####SET MONTH AS INDEX FOR DECOMPOSITION AND FILTER FOR ONLY NORTH AMERICA SALES DATA
 america_sales_actuals = sales.loc[sales['region'] == 'AMERICA'].set_index('month')

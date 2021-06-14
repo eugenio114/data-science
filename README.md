@@ -1,5 +1,6 @@
 # This repository contains my data science projects 
 
+- **decomposing-time-series** : run the cross-correlation function from statsmodels to understand the correlation between EMEA sales quantity and EMEA sales orders. The times         series have been detrended by model fitting before the ccf was performed. 
 - **decomposing-time-series** : this file shows how to decompose a time series dataset using statsmodels.api
 - **detrending-time-series** : this file shows how to detrend a time series dataset by model fitting (in this case I have used some dummy data of EMEA sales volumes) using scikit-     learn Linear Regression model. 
 - **forecasting-sales-volumes-sarimax** : this file contains a predictive SARIMAX model that forecasts sales volume of EMEA, AMERICA and ASIA for 6 month time horizon. 

@@ -28,7 +28,7 @@ from sklearn.linear_model import LinearRegression
 emea_sales_series = emea_sales_values.squeeze()
 
 # fit linear model
-X = [i for i in range(0, len(emea_sales_series))]  #CHANGE HERE THE TIME SERIES_________
+X = list(range(len(emea_sales_series)))
 X = np.reshape(X, (len(X), 1))
 y = emea_sales_series.values #CHANGE HERE THE TIME SERIES_________
 model = LinearRegression()
@@ -41,7 +41,7 @@ plt.plot(trend)
 plt.show()
 # detrend
 ##########MODiFY NAME BELOW
-emea_detrended_sales = [y[i]-trend[i] for i in range(0, len(emea_sales_series))] #CHANGE HERE THE TIME SERIES_________
+emea_detrended_sales = [y[i]-trend[i] for i in range(len(emea_sales_series))]
 # plot detrended
 plt.plot(emea_detrended_sales) #CHANGE HERE THE TIME SERIES_________
 plt.show()

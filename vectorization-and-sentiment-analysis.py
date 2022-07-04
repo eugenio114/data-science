@@ -132,6 +132,6 @@ print(f1_score(test_y, clf_gnb.predict(test_x_vectors), average=None, labels=[Se
 print(f1_score(test_y, clf_log.predict(test_x_vectors), average=None, labels=[Sentiment.POSITIVE, Sentiment.NEUTRAL, Sentiment.NEGATIVE]))
 
 print(train_x[0])
-print(train_y[0:5])
+print(train_y[:5])
 print(train_y.count(Sentiment.POSITIVE))
 
